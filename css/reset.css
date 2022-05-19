@@ -47,3 +47,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+:focus{
+	/* прибрати стандартну рамку в	фокусі */
+	outline: none;
+	/* ставлю рамку яка краще пасує до	дизайну */
+	
+	border-radius: 4px;
+	box-shadow: 0 0 8px rgb(0, 0, 0,	0.8);
+}
