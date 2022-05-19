@@ -1,0 +1,108 @@
+:root {
+   --main-font: 'Roboto', sans-serif;
+   --accent-font: 'Raleway', sans-serif;
+   --accent-background-color: #2F303A; 
+   --accent-color: #2196F3;
+   --main-font-weight: 400;
+   --header-font-weight: 700;--header-color: #212121;
+   --main-text-color: #757575;
+
+}
+
+html,
+body {
+   width: auto;
+   height: auto;
+   font-family: var(--main-font);
+   font-family: var(--accent-font);
+}
+
+.tech-container {
+   width: 1170px;
+   margin: 0 auto;
+}
+
+.header {
+   display: flex;
+   width: 100%;
+   height: auto;
+   padding: 24px 0;
+   
+}
+
+.logo-link {
+   display: block;
+   margin: 0 90px 0 0;
+   font-family: var(--accent-font);
+   font-weight: var(--header-font-weight);
+   font-size: 26px;
+   line-height: 31px;
+   color: var(--header-color);
+}
+
+.logo-accent {
+   color: var(--accent-color);
+}
+
+.nav-links {
+   display: flex;
+   padding: 8px 0;
+}
+.nav-link-element {
+   margin: 0 25px;
+   font-family: var(--main-font);
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   color: var(--header-color);
+}
+
+.contacts {
+   width: 307px;
+   display: flex;
+   justify-content: space-between;
+   margin-left: 330px;
+   padding: 8px 0;
+}
+
+.contacts-link {
+   font-family: var(--main-font);
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   color: var(--main-text-color);
+}
+
+.logo-link:hover,
+.contacts-link:hover,
+.nav-link-element:hover {
+   color: var(--accent-color);
+}
+
+main {
+   width: 100%;
+   height: auto;
+   padding: 94px 15px;
+   border-top: 1px solid rgba(236, 236, 236, 1);
+}
+.filter {
+
+}
+.filter-list {
+
+}
+.filter-list-element {
+
+}
+.filter-btn {
+
+}
+.portfolio {
+
+}
+.portfolio-list {
+
+}
+.portfolio-card {
+
+}

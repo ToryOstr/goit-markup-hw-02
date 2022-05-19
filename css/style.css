@@ -25,7 +25,6 @@ body {
 
 .header {
    display: flex;
-   flex-direction: row;
    width: 100%;
    height: auto;
    padding: 24px 0;
@@ -47,7 +46,6 @@ body {
 
 .nav-links {
    display: flex;
-   flex-direction: row;
    padding: 8px 0;
 }
 .nav-link-element {
@@ -62,7 +60,6 @@ body {
 .contacts {
    width: 307px;
    display: flex;
-   flex-direction: row;
    justify-content: space-between;
    margin-left: 330px;
    padding: 8px 0;
@@ -88,7 +85,7 @@ body {
    width: auto;
    height: auto;
    padding: 200px;
-   background-color: var(--accent-background-color);
+   background: url('../images/hero.jpg') 0 0/auto 100% no-repeat;
 }
 
 .hero-header {
