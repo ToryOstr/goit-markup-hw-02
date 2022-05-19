@@ -77,7 +77,7 @@ body {
 }
 
 .hero {
-   background: url('../images/Img.jpg') 0 0/auto 100% no-repeat;
+   background: url('../images/Img.jpg') 50% 0/auto no-repeat;
 }
 
 .transparant {
