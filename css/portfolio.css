@@ -1,20 +1,21 @@
+
 :root {
    --main-font: 'Roboto', sans-serif;
    --accent-font: 'Raleway', sans-serif;
    --accent-background-color: #2F303A; 
    --accent-color: #2196F3;
    --main-font-weight: 400;
-   --header-font-weight: 700;--header-color: #212121;
+   --header-font-weight: 700;
+   --header-color: #212121;
    --main-text-color: #757575;
-
 }
 
-html,
 body {
    width: auto;
    height: auto;
    font-family: var(--main-font);
-   font-family: var(--accent-font);
+   font-weight:  var(--main-font-weight);
+   color: var(--main-text-color);
 }
 
 .tech-container {
@@ -27,7 +28,6 @@ body {
    width: 100%;
    height: auto;
    padding: 24px 0;
-   
 }
 
 .logo-link {
@@ -50,7 +50,6 @@ body {
 }
 .nav-link-element {
    margin: 0 25px;
-   font-family: var(--main-font);
    font-weight: 500;
    font-size: 14px;
    line-height: 16px;
@@ -82,27 +81,96 @@ body {
 main {
    width: 100%;
    height: auto;
-   padding: 94px 15px;
+   padding: 94px 0;
    border-top: 1px solid rgba(236, 236, 236, 1);
 }
+
 .filter {
+   display: flex;
+   width: 611px;
+   height: auto;
+   margin: 0 auto ;
+   margin-bottom: 34px;
+   justify-content: space-between;
 
 }
-.filter-list {
 
-}
-.filter-list-element {
-
-}
 .filter-btn {
-
+   border: none;
+   border-radius: 4px;
+   padding: 6px 22px;
+   background: #F5F4FA;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   
+   color: var(--header-color);
 }
 .portfolio {
-
+   display: flex;
+   width: 1170px;
+   margin: 0 auto;
 }
 .portfolio-list {
+  
+   justify-content: space-between;
 
 }
 .portfolio-card {
 
+}
+.footer {
+   width: 100%;
+   height: auto;
+   padding: 60px 0 60px ;
+   background: var(--accent-background-color);
+}
+
+.footer-tech-container {
+   width: 1170px;
+   margin: 0 auto;
+}
+
+.footer-logo-link {
+   font-family: var(--accent-font );
+   font-weight: var(--header-font-weight);
+   font-size: 26px;
+   line-height: 31px;
+   color: #FFFFFF;
+}
+
+.footer-contacts-link {
+   display: flex;
+   flex-direction: column;
+   margin: 20px 0 0 0;
+}
+
+.footer-contacts-link-google-map,
+.footer-contacts-link-email,
+.footer-contacts-link-tel {
+   font-family: var(--main-font);
+   font-weight:  var(--main-font-weight);
+   font-size: 14px;
+   line-height: 24px;
+   color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts-link-google-map {
+   color: #FFFFFF;
+}
+
+.footer-logo-link:focus,
+.footer-contacts-link-google-map:focus,
+.footer-contacts-link-email:focus,
+.footer-contacts-link-tel:focus {
+   color: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(33, 150 243, 0.15);
+}
+
+.footer-logo-link:hover,
+.footer-contacts-link-google-map:hover,
+.footer-contacts-link-email:hover,
+.footer-contacts-link-tel:hover {
+   color: var(--accent-color);
 }

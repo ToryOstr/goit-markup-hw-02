@@ -1,4 +1,3 @@
-
 :root {
    --main-font: 'Roboto', sans-serif;
    --accent-font: 'Raleway', sans-serif;
@@ -7,15 +6,14 @@
    --main-font-weight: 400;
    --header-font-weight: 700;--header-color: #212121;
    --main-text-color: #757575;
-
 }
 
-html,
 body {
    width: auto;
    height: auto;
    font-family: var(--main-font);
-   font-family: var(--accent-font);
+   font-weight:  var(--main-font-weight);
+   color: var(--main-text-color);
 }
 
 .tech-container {
@@ -50,7 +48,6 @@ body {
 }
 .nav-link-element {
    margin: 0 25px;
-   font-family: var(--main-font);
    font-weight: 500;
    font-size: 14px;
    line-height: 16px;
@@ -80,19 +77,22 @@ body {
 }
 
 .hero {
+   background: url('../images/Img.jpg') 0 0/auto 100% no-repeat;
+}
+
+.transparant {
    display: flex;
    flex-direction: column;
    width: auto;
    height: auto;
    padding: 200px;
-   background: url('../images/hero.jpg') 0 0/auto 100% no-repeat;
+   background-color: rgba(47, 48, 58, 0.4);
 }
 
 .hero-header {
    width: 696px;
    height: 120px;
    margin: 0 auto;
-   font-family: var(--main-font);
    font-weight: 900;
    font-size: 44px;
    line-height: 60px;
@@ -102,7 +102,6 @@ body {
 }
 
 .hero-button {
-   font-family: var(--main-font);
    font-weight: var(--header-font-weight);
    font-size: 16px;
    line-height: 30px;
@@ -117,7 +116,6 @@ body {
 
 .hero-button:focus,
 .hero-button:hover {
-   cursor: pointer;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    color: #ecedf5;
 }
@@ -137,17 +135,13 @@ body {
    width: 270px;
    height: auto;
    margin: 0 auto ;
-   font-family: var(--main-font);
-   font-weight:var(--main-font-weight);
    font-size: 14px;
    line-height: 24px;
    letter-spacing: 0.03em;
-   color: var(--main-text-color);
 }
 
 .element-header {
 margin-bottom: 10px;
-font-family: var(--main-font);
 font-weight: var(--header-font-weight);
 font-size: 14px;
 line-height: 16px;
@@ -157,7 +151,6 @@ color: var(--header-color);
 
 .team-header,
 .types-works-header {
-   font-family: var(--main-font);
    font-weight: var(--header-font-weight);
    font-size: 36px;
    line-height: 42px;
@@ -194,7 +187,6 @@ color: var(--header-color);
 
 .person-name {
    margin: 30px auto 10px ;
-   font-family: var(--main-font);
    font-weight: 500;
    font-size: 16px;
    line-height: 19px;
@@ -204,8 +196,6 @@ color: var(--header-color);
 
 .person-position {
    margin: 0 auto 30px;
-   font-family: var(--main-font);
-   font-weight: var(--main-font-weight);
    font-size: 16px;
    line-height: 19px;
    text-align: center;
@@ -222,11 +212,10 @@ color: var(--header-color);
 .footer-tech-container {
    width: 1170px;
    margin: 0 auto;
-
 }
 
 .footer-logo-link {
-      font-family: 'Raleway', sans-serif;
+      font-family: var(--accent-font );
       font-weight: var(--header-font-weight);
       font-size: 26px;
       line-height: 31px;
@@ -237,33 +226,25 @@ color: var(--header-color);
    display: flex;
    flex-direction: column;
    margin: 20px 0 0 0;
-   
 }
 
-.footer-contacts-link-google-map {
-   font-family: var(--main-font);
-   font-weight: var(--main-font-weight);
-   font-size: 14px;
-   line-height: 24px;
-   color: #FFFFFF;
-}
-
-
-
+.footer-contacts-link-google-map,
 .footer-contacts-link-email,
 .footer-contacts-link-tel {
    font-family: var(--main-font);
-   font-weight: var(--main-font-weight);
+   font-weight:  var(--main-font-weight);
    font-size: 14px;
    line-height: 24px;
    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts-link-google-map {
+   color: #FFFFFF;
 }
 
 .footer-logo-link:focus,
 .footer-contacts-link-google-map:focus,
 .footer-contacts-link-email:focus,
 .footer-contacts-link-tel:focus {
-   cursor: pointer;
    color: var(--accent-color);
    box-shadow: 0px 4px 4px rgba(33, 150 243, 0.15);
 }
@@ -272,6 +253,5 @@ color: var(--header-color);
 .footer-contacts-link-google-map:hover,
 .footer-contacts-link-email:hover,
 .footer-contacts-link-tel:hover {
-   cursor: pointer;
    color: var(--accent-color);
 }
