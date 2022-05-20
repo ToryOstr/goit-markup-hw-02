@@ -14,7 +14,9 @@ body {
    width: auto;
    height: auto;
    font-family: var(--main-font);
+   font-size: 14px;
    font-weight:  var(--main-font-weight);
+   line-height: 1.16;
    color: var(--main-text-color);
 }
 
@@ -36,7 +38,7 @@ body {
    font-family: var(--accent-font);
    font-weight: var(--header-font-weight);
    font-size: 26px;
-   line-height: 31px;
+   line-height: 1.19;
    color: var(--header-color);
 }
 
@@ -51,15 +53,14 @@ body {
 .nav-link-element {
    margin: 0 25px;
    font-weight: 500;
-   font-size: 14px;
-   line-height: 16px;
+   line-height: 1.14;
    color: var(--header-color);
 }
 
 .contacts {
-   width: 307px;
    display: flex;
    justify-content: space-between;
+   width: 307px;
    margin-left: 330px;
    padding: 8px 0;
 }
@@ -67,8 +68,7 @@ body {
 .contacts-link {
    font-family: var(--main-font);
    font-weight: 500;
-   font-size: 14px;
-   line-height: 16px;
+   line-height: 1.14;
    color: var(--main-text-color);
 }
 
@@ -125,21 +125,22 @@ main {
 .portfolio-list {
    column-count: 3;
    column-gap: 30px;
-
 }
 
 .portfolio-card {
    margin-bottom: 30px;
+   border: 1px solid #EEEEEE;
 }
 
 .card-header {
-   margin-bottom: 4px;
-   padding-left: 24px;
+   margin: 20px 0 4px 24px;
    font-weight: 700;
    font-size: 18px;
    line-height: 2;
+}
 
-
+p {
+   margin: 0 0 20px 24px;
 }
 
 .footer {
@@ -158,7 +159,7 @@ main {
    font-family: var(--accent-font );
    font-weight: var(--header-font-weight);
    font-size: 26px;
-   line-height: 31px;
+   line-height: 1.19;
    color: #FFFFFF;
 }
 
@@ -171,10 +172,8 @@ main {
 .footer-contacts-link-google-map,
 .footer-contacts-link-email,
 .footer-contacts-link-tel {
-   font-family: var(--main-font);
-   font-weight:  var(--main-font-weight);
-   font-size: 14px;
-   line-height: 24px;
+
+   line-height: 1.71;
    color: rgba(255, 255, 255, 0.6);
 }
 .footer-contacts-link-google-map {

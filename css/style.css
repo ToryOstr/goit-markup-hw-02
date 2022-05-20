@@ -17,7 +17,6 @@ body {
    font-weight:  var(--main-font-weight);
    line-height: 1.16;
    color: var(--main-text-color);
-   letter-spacing: 1.19;
 }
 
 .tech-container {
@@ -58,9 +57,9 @@ body {
 }
 
 .contacts {
-   width: 307px;
    display: flex;
    justify-content: space-between;
+   width: 307px;
    margin-left: 330px;
    padding: 8px 0;
 }
