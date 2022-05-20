@@ -4,7 +4,8 @@
    --accent-background-color: #2F303A; 
    --accent-color: #2196F3;
    --main-font-weight: 400;
-   --header-font-weight: 700;--header-color: #212121;
+   --header-font-weight: 700;
+   --header-color: #212121;
    --main-text-color: #757575;
 }
 
@@ -12,8 +13,11 @@ body {
    width: auto;
    height: auto;
    font-family: var(--main-font);
+   font-size: 14px;
    font-weight:  var(--main-font-weight);
+   line-height: 1.16;
    color: var(--main-text-color);
+   letter-spacing: 1.19;
 }
 
 .tech-container {
@@ -34,7 +38,7 @@ body {
    font-family: var(--accent-font);
    font-weight: var(--header-font-weight);
    font-size: 26px;
-   line-height: 31px;
+   line-height: 1.19;
    color: var(--header-color);
 }
 
@@ -49,8 +53,7 @@ body {
 .nav-link-element {
    margin: 0 25px;
    font-weight: 500;
-   font-size: 14px;
-   line-height: 16px;
+   line-height: 1.14;
    color: var(--header-color);
 }
 
@@ -65,8 +68,7 @@ body {
 .contacts-link {
    font-family: var(--main-font);
    font-weight: 500;
-   font-size: 14px;
-   line-height: 16px;
+   line-height: 1.14;
    color: var(--main-text-color);
 }
 
@@ -77,10 +79,6 @@ body {
 }
 
 .hero {
-   background: url('../images/Img.jpg') 50% 0/auto no-repeat;
-}
-
-.transparant {
    display: flex;
    flex-direction: column;
    width: auto;
@@ -95,23 +93,23 @@ body {
    margin: 0 auto;
    font-weight: 900;
    font-size: 44px;
-   line-height: 60px;
+   line-height: 1.36;
    text-align: center;
    text-transform: uppercase;
    color: #FFFFFF;
 }
 
 .hero-button {
-   font-weight: var(--header-font-weight);
-   font-size: 16px;
-   line-height: 30px;
-   color: #FFFFFF;
    width: 200px;
    height: 50px;
-   margin: 30px auto 0;
-   background: var(--accent-color);
    border: none;
    border-radius: 4px;
+   margin: 30px auto 0;
+   font-weight: var(--header-font-weight);
+   font-size: 16px;
+   line-height: 1.87;
+   color: #FFFFFF;
+   background: var(--accent-color);
 }
 
 .hero-button:focus,
@@ -135,16 +133,13 @@ body {
    width: 270px;
    height: auto;
    margin: 0 auto ;
-   font-size: 14px;
-   line-height: 24px;
-   letter-spacing: 0.03em;
+   line-height: 1.71;
 }
 
 .element-header {
 margin-bottom: 10px;
 font-weight: var(--header-font-weight);
-font-size: 14px;
-line-height: 16px;
+line-height: 1.14;
 text-transform: uppercase;
 color: var(--header-color);
 }
@@ -153,10 +148,10 @@ color: var(--header-color);
 .types-works-header {
    font-weight: var(--header-font-weight);
    font-size: 36px;
-   line-height: 42px;
    text-align: center;
    color: var(--header-color);
 }
+
 .types-works-items {
    display: flex;
    width: 1170px;
@@ -189,7 +184,7 @@ color: var(--header-color);
    margin: 30px auto 10px ;
    font-weight: 500;
    font-size: 16px;
-   line-height: 19px;
+   line-height: 1.19;
    text-align: center;
    color: var(--header-color);
 }
@@ -197,7 +192,7 @@ color: var(--header-color);
 .person-position {
    margin: 0 auto 30px;
    font-size: 16px;
-   line-height: 19px;
+   line-height: 1.19;
    text-align: center;
    color: var(--main-text-color);
 }
@@ -213,13 +208,9 @@ color: var(--header-color);
    width: 1170px;
    margin: 0 auto;
 }
-
 .footer-logo-link {
-      font-family: var(--accent-font );
-      font-weight: var(--header-font-weight);
-      font-size: 26px;
-      line-height: 31px;
-      color: #FFFFFF;
+   width: 140px;
+   color: #FFFFFF;
 }
 
 .footer-contacts-link {
@@ -233,10 +224,10 @@ color: var(--header-color);
 .footer-contacts-link-tel {
    font-family: var(--main-font);
    font-weight:  var(--main-font-weight);
-   font-size: 14px;
-   line-height: 24px;
+   line-height: 1.71;
    color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-contacts-link-google-map {
    color: #FFFFFF;
 }

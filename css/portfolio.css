@@ -102,24 +102,46 @@ main {
    background: #F5F4FA;
    font-weight: 500;
    font-size: 16px;
-   line-height: 26px;
+   line-height: 1.62;
    text-align: center;
-   letter-spacing: 0.03em;
-   
    color: var(--header-color);
 }
+.filter-btn:hover,
+.filter-btn:focus {
+   background-color: var(--accent-color);
+   color: #FFFFFF;
+}
+
+.filter-btn:active {
+   color: #F5F4FA;
+}
+
 .portfolio {
    display: flex;
    width: 1170px;
    margin: 0 auto;
 }
+
 .portfolio-list {
-   justify-content: space-between;
+   column-count: 3;
+   column-gap: 30px;
 
 }
+
 .portfolio-card {
+   margin-bottom: 30px;
+}
+
+.card-header {
+   margin-bottom: 4px;
+   padding-left: 24px;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+
 
 }
+
 .footer {
    width: 100%;
    height: auto;

@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="shortcut icon" href="./images/logo_1.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="tech-container">
       <!-- Шапка -->
       <header class="header">
-        <a class="logo-link" href="./index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
+        <a class="logo-link" tabindex="1" href="./index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
         <nav>
           <ul class="nav-links">
             <li >
-              <a class="nav-link-element" href="#">Студия</a>
+              <a class="nav-link-element" tabindex="2" href="./index.html">Студия</a>
             </li>
             <li >
-              <a class="nav-link-element" href="./portfolio.html">Портфолио</a>
+              <a class="nav-link-element" tabindex="3" href="./portfolio.html">Портфолио</a>
             </li>
             <li>
-              <a class="nav-link-element" href="#">Контакты</a>
+              <a class="nav-link-element" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -45,10 +45,8 @@
     <main>
       <!-- Секция герой -->
       <section class="hero">
-        <div class="transparant">
           <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-button">Заказать услугу</button>
-        </div>
       </section>
       <!-- Секция особенности -->
       <section class="specifics">
@@ -127,8 +125,8 @@
       <!-- Подвал веб-страницы -->
     <footer class="footer">
       <div class="footer-tech-container">
-        <a class="footer-logo-link" href="#" lang="en"><span class="logo-accent">Web</span>Studio</a>
-        <address>
+        <a class="footer-logo-link logo-link" href="#top" lang="en"><span class="logo-accent">Web</span>Studio</a>
+        <address id="contacts">
           <ul class="footer-contacts-link">
             <li>
               <a class="footer-contacts-link-google-map" target="_blank" rel="noopener nofollow noreferrer" href="https://goo.gl/maps/JpqHF6euzhfDJc6Z8" >г. Киев, пр-т Леси Украинки, 26</a> 
