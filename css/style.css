@@ -222,9 +222,9 @@ color: var(--header-color);
 }
 
 .footer-tech-container {
-   width: 1170px;
+   width: 1200px;
    margin: 0 auto;
-padding: 0 15px;
+   padding: 0 15px;
 }
 .footer-logo-link {
    width: 140px;
