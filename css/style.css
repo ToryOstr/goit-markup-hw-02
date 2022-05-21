@@ -19,16 +19,18 @@ body {
    color: var(--main-text-color);
 }
 
-.tech-container {
-   width: 1170px;
+.header {
+   width: 100%;
    margin: 0 auto;
+   padding: 24px 0;
 }
 
-.header {
+.header-container {
    display: flex;
-   width: 100%;
+   width: 1200px;
    height: auto;
-   padding: 24px 0;
+   margin: 0 auto;
+   padding: 0 15px;
 }
 
 .logo-link {
@@ -50,7 +52,7 @@ body {
    padding: 8px 0;
 }
 .nav-link-element {
-   margin: 0 25px;
+   margin-right: 50px;
    font-weight: 500;
    line-height: 1.14;
    color: var(--header-color);
@@ -60,7 +62,7 @@ body {
    display: flex;
    justify-content: space-between;
    width: 307px;
-   margin-left: 330px;
+   margin-left: auto;
    padding: 8px 0;
 }
 
@@ -78,12 +80,17 @@ body {
 }
 
 .hero {
-   display: flex;
-   flex-direction: column;
    width: auto;
    height: auto;
-   padding: 200px;
-   background-color: rgba(47, 48, 58, 0.4);
+   padding: 200px 0;
+   background-color: var(--accent-background-color);
+}
+.container {
+   display: flex;
+   flex-direction: column;
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
 }
 
 .hero-header {
@@ -118,24 +125,23 @@ body {
 }
 
 .specifics {
-   padding: 94px 15px;
+   width: 100%;
+   padding: 94px 0;
 }
 
 .specifics-list {
    display: flex;
-   width: 1170px;
-   margin: 0 auto;
-   justify-content: space-between;
+   width: 100%;
+   column-count: 4;
+   column-gap: 30px;
 }
 
 .specifics-list-element {
    width: 270px;
    height: auto;
-   margin: 0 auto ;
-   line-height: 1.71;
 }
 
-.element-header {
+.specifics-list-elem-header {
 margin-bottom: 10px;
 font-weight: var(--header-font-weight);
 line-height: 1.14;
@@ -143,18 +149,26 @@ text-transform: uppercase;
 color: var(--header-color);
 }
 
+.specifics-list-description{
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+}
+
 .team-header,
 .types-works-header {
+   margin-bottom: 50px;
    font-weight: var(--header-font-weight);
    font-size: 36px;
    text-align: center;
    color: var(--header-color);
 }
 
+.types-works{
+   padding-bottom: 94px;
+}
+
 .types-works-items {
    display: flex;
-   width: 1170px;
-   margin: 50px auto 94px;
    justify-content: space-between;
 }
 
@@ -166,8 +180,6 @@ color: var(--header-color);
 
 .team-list-persons {
    display: flex;
-   width: 1170px;
-   margin: 50px auto 0;
    justify-content: space-between;
 }
 
@@ -179,20 +191,26 @@ color: var(--header-color);
    border-radius: 0px 0px 4px 4px;
 }
 
+.card-description-contaner{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 150px;
+   margin: 30px auto;
+
+}
+
 .person-name {
-   margin: 30px auto 10px ;
+   margin-bottom: 10px;
    font-weight: 500;
    font-size: 16px;
    line-height: 1.19;
-   text-align: center;
    color: var(--header-color);
 }
 
 .person-position {
-   margin: 0 auto 30px;
    font-size: 16px;
    line-height: 1.19;
-   text-align: center;
    color: var(--main-text-color);
 }
 
@@ -206,6 +224,7 @@ color: var(--header-color);
 .footer-tech-container {
    width: 1170px;
    margin: 0 auto;
+padding: 0 15px;
 }
 .footer-logo-link {
    width: 140px;
@@ -215,7 +234,11 @@ color: var(--header-color);
 .footer-contacts-link {
    display: flex;
    flex-direction: column;
-   margin: 20px 0 0 0;
+   margin-top: 20px;
+}
+
+.footer-contacts-element {
+   margin-bottom: 9px;
 }
 
 .footer-contacts-link-google-map,
