@@ -13,18 +13,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="tech-container">
     <!-- Шапка -->
-    <header class="header">
+  <header class="header">
+    <div class="header-container">
       <a class="logo-link" tabindex="1" href="./index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
       <nav>
         <ul class="nav-links">
-          <li >
+          <li>
             <a class="nav-link-element" tabindex="2" href="./index.html">Студия</a>
           </li>
-          <li >
+
+          <li>
             <a class="nav-link-element" tabindex="3" href="./portfolio.html">Портфолио</a>
           </li>
+
           <li>
             <a class="nav-link-element" tabindex="4" href="#contacts">Контакты</a>
           </li>
@@ -35,96 +37,122 @@
         <li>
           <a class="contacts-link" tabindex="5" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
+        
         <li>
           <a class="contacts-link" tabindex="6" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
-    </header>
-  </div>  
+    </div>
+  </header> 
     <!-- основной контент -->
   <main>
+    <section class="portfolio">
+    <div class="container">
       <ul class="filter">
           <li>
             <button class="filter-btn" tabindex="7" type="button">Все</button>
           </li>
+
           <li>
             <button class="filter-btn" tabindex="8" type="button">Веб-сайты</button>
           </li>
+
           <li>
             <button class="filter-btn" tabindex="9" type="button">Приложения</button>
           </li>
+
           <li>
             <button class="filter-btn" tabindex="10" type="button">Дизайн</button>
           </li>
+
           <li>
             <button class="filter-btn" tabindex="11" type="button">Маркетинг</button>
           </li>
       </ul>
-    <section class="portfolio">
+
       <h1 class="visually-hidden" >Наши работы</h1>
       <ul class="portfolio-list" >
           <li class="portfolio-card">
             <img width="370" src="./images/technocrack.jpg" alt="Веб-сайт Технокряк">
+            <div class="card-text-contaner">
             <h2 class="card-header">Технокряк</h2>
             <p>Веб-сайт</p>
+            </div>
           </li>
           <li class="portfolio-card">
             <img width="370" src="./images/new-orlean-vs-golden-star.jpg" alt="Дихайн постера">
+            <div class="card-text-contaner">
             <h2 class="card-header">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
             <p>Дизайн</p>
+            </div>
           </li>
           <li class="portfolio-card">
             <img width="370" src="./images/seafood.jpg" alt="Приложение ресторана">
+            <div class="card-text-contaner">
             <h2 class="card-header">Ресторан <span lang="en">Seafood</span></h2>
             <p>Приложение</p>
+            </div>
           </li>
           <li class="portfolio-card">
             <img width="370" src="./images/prime.jpg" alt="Марркетинговый проект">
+            <div class="card-text-contaner">
               <h2 class="card-header">Проект <span lang="en">Prime</span></h2>
             <p>Маркетинг</p>
+            </div>
           </li>
           <li class="portfolio-card">
             <img width="370" src="./images/boxes.jpg" alt="Проект приложение">
+            <div class="card-text-contaner">
             <h2 class="card-header">Проект <span lang="en">Boxes</span></h2>
             <p>Приложение</p>
+            </div>
           </li>
           <li class="portfolio-card">
             <img width="370" src="./images/inspiration-has-no-borders.jpg" alt="Веб-сайт">
+            <div class="card-text-contaner">
             <h2 class="card-header" lang="en">Inspiration has no Borders</h2>
             <p>Веб-сайт</p>
+            </div>
           </li>
           <li class="portfolio-card">
             <img width="370" src="./images/limited-edition.jpg" alt="Дизайн Издания">
+            <div class="card-text-contaner">
             <h2 class="card-header">Издание <span lang="en">Limited Edition</span></h2>
             <p>Дизайн</p>
+            </div>
           </li>
           <li class="portfolio-card">
           <img width="370" src="./images/lab.jpg" alt="Марркетинговый проект">
+          <div class="card-text-contaner">
             <h2 class="card-header">Проект <span lang="en">LAB</span></h2>
             <p>Маркетинг</p>
+            </div>
           </li>
           <li class="portfolio-card">
             <img width="370" src="./images/growing-business.jpg" alt="Приложение">
+            <div class="card-text-contaner">
               <h2 class="card-header" lang="en">Growing Business</h2>
             <p>Приложение</p>
+            </div>
           </li>
       </ul>
+    </div>
     </section>
 
   </main>
     <!-- Подвал веб-страницы -->
       <footer class="footer">
         <div class="footer-tech-container">
-          <a class="footer-logo-link" tabindex="12" href="./index.html" lang="en"><span class="logo-accent">Web</span>Studio</a>
+          <a class="footer-logo-link logo-link" tabindex="12" href="#top" lang="en"><span class="logo-accent">Web</span>Studio</a>
           <address id="contacts">
             <ul class="footer-contacts-link">
-              <li>
+              <li class="footer-contacts-element">
                 <a class="footer-contacts-link-google-map" tabindex="13" target="_blank" rel="noopener nofollow noreferrer" href="https://goo.gl/maps/JpqHF6euzhfDJc6Z8" >г. Киев, пр-т Леси Украинки, 26</a> 
               </li>
-              <li>
+              <li class="footer-contacts-element">
                 <a class="footer-contacts-link-email" tabindex="14" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li>
+              <li class="footer-contacts-element">
                 <a class="footer-contacts-link-tel" tabindex="15" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
