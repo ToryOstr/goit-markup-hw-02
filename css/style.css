@@ -10,13 +10,24 @@
 }
 
 body {
-   width: auto;
-   height: auto;
    font-family: var(--main-font);
    font-size: 14px;
    font-weight:  var(--main-font-weight);
    line-height: 1.16;
    color: var(--main-text-color);
+}
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
 }
 
 .header {
@@ -73,14 +84,19 @@ body {
    color: var(--main-text-color);
 }
 
-.logo-link:hover,
 .contacts-link:hover,
-.nav-link-element:hover {
+.contacts-link:focus,
+.nav-link-element:hover,
+.nav-link-element:focus {
    color: var(--accent-color);
 }
+.current {
+      color: var(--accent-color);
+}
+
 
 .hero {
-   width: auto;
+   width: 100%;
    height: auto;
    padding: 200px 0;
    background-color: var(--accent-background-color);
@@ -141,7 +157,7 @@ body {
    height: auto;
 }
 
-.specifics-list-elem-header {
+.specifics-list-header {
 margin-bottom: 10px;
 font-weight: var(--header-font-weight);
 line-height: 1.14;
@@ -154,8 +170,7 @@ color: var(--header-color);
    letter-spacing: 0.03em;
 }
 
-.team-header,
-.types-works-header {
+.section-header {
    margin-bottom: 50px;
    font-weight: var(--header-font-weight);
    font-size: 36px;
@@ -241,30 +256,24 @@ color: var(--header-color);
    margin-bottom: 9px;
 }
 
-.footer-contacts-link-google-map,
-.footer-contacts-link-email,
-.footer-contacts-link-tel {
+.footer-link-google-map,
+.footer-link-email,
+.footer-link-tel {
    font-family: var(--main-font);
    font-weight:  var(--main-font-weight);
    line-height: 1.71;
    color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contacts-link-google-map {
+.footer-link-google-map {
    color: #FFFFFF;
 }
 
-.footer-logo-link:focus,
-.footer-contacts-link-google-map:focus,
-.footer-contacts-link-email:focus,
-.footer-contacts-link-tel:focus {
-   color: var(--accent-color);
-   box-shadow: 0px 4px 4px rgba(33, 150, 243, 0.15);
-}
-
-.footer-logo-link:hover,
-.footer-contacts-link-google-map:hover,
-.footer-contacts-link-email:hover,
-.footer-contacts-link-tel:hover {
+.footer-link-google-map:focus,
+.footer-link-email:focus,
+.footer-link-tel:focus,
+.footer-link-google-map:hover,
+.footer-link-email:hover,
+.footer-link-tel:hover {
    color: var(--accent-color);
 }
